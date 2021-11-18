@@ -75,7 +75,7 @@ router.get('/', PostsController.getPosts);
  *         description: The post id
  *     responses:
  *       200:
- *         description: The book description by id
+ *         description: The post description by id
  *         content:
  *           application/json:
  *             schema:
