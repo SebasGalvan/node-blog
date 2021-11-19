@@ -5,15 +5,15 @@
 <br>
 
 ```bash
-/posts
+http://localhost:3000/posts
 ```
 
 ```bash
-/category
+http://localhost:3000/category
 ```
 
 ```bash
-/api-docs
+http://localhost:3000/api-docs
 ```
 
 
