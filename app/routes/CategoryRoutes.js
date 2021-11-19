@@ -15,7 +15,7 @@ const CategoryController =  require('../controllers/CategoryController')
  *         - description
  *       properties:
  *         id:
- *           type: string
+ *           type: integer
  *           description: The auto-generated id of the category
  *         description:
  *           type: string

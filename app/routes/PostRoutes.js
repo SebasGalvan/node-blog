@@ -57,6 +57,8 @@ const validations =  require('../validations/PostValidation');
  *               type: array
  *               items:
  *                 $ref: '#/components/schemas/Post'
+ *       500:
+ *         description: Some error happened
  */
 router.get('/', PostsController.getPosts);
 
@@ -70,7 +72,7 @@ router.get('/', PostsController.getPosts);
  *       - in: path
  *         name: id
  *         schema:
- *           type: string
+ *           type: integer
  *         required: true
  *         description: The post id
  *     responses:
@@ -82,6 +84,8 @@ router.get('/', PostsController.getPosts);
  *               $ref: '#/components/schemas/Post'
  *       404:
  *         description: The post was not found
+ *       500:
+ *        description: Some error happened
  */
  router.get('/:id', PostsController.getPost);
 
@@ -121,7 +125,7 @@ router.post('/', validations.image ,PostsController.setPost);
  *      - in: path
  *        name: id
  *        schema:
- *          type: string
+ *          type: integer
  *        required: true
  *        description: The post id
  *    requestBody:
@@ -153,7 +157,7 @@ router.patch('/:id', PostsController.updatePost);
  *       - in: path
  *         name: id
  *         schema:
- *           type: string
+ *           type: integer
  *         required: true
  *         description: The post id
  * 
